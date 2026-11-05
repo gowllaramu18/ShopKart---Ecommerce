@@ -1,0 +1,132 @@
+
+/* PAGE */
+.register-page {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #f1f5ff, #e0eaff);
+    box-sizing: border-box;
+}
+
+/* REGISTER CARD */
+.register-card {
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(15, 23, 42, 0.12);
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.register-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.register-icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.register-header h1 {
+    color: #0f172a;
+    margin: 0 0 8px;
+    font-size: 30px;
+}
+
+.register-header p {
+    color: #64748b;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* FORM */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.register-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #334155;
+    font-size: 14px;
+}
+
+/* INPUTS */
+.register-input {
+    width: 100%;
+    padding: 13px 14px;
+    margin-bottom: 18px;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    background: #ffffff;
+    transition: 0.2s ease;
+}
+
+.register-input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* REGISTER BUTTON */
+.register-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: 0.2s ease;
+}
+
+.register-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.25);
+}
+
+/* LOGIN LINK */
+.register-login {
+    text-align: center;
+    margin-top: 25px;
+    color: #64748b;
+    font-size: 15px;
+}
+
+.register-login a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-login a:hover {
+    text-decoration: underline;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 500px) {
+    .register-page {
+        padding: 30px 15px;
+    }
+
+    .register-card {
+        padding: 30px 22px;
+    }
+
+    .register-header h1 {
+        font-size: 26px;
+    }
+}

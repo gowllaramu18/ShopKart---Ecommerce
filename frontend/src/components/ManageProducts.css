@@ -1,0 +1,313 @@
+.manage-products-page {
+    min-height: 100vh;
+    background: #f8fafc;
+    padding: 40px 20px;
+}
+
+.manage-products-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.manage-products-container h1 {
+    color: #0f172a;
+    margin-bottom: 5px;
+}
+
+.manage-products-container > p {
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+
+/* ==============================
+   PRODUCT LIST
+============================== */
+
+.manage-products-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* ==============================
+   PRODUCT CARD
+============================== */
+
+.manage-product-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background: white;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 15px rgba(0, 0, 0, 0.07);
+}
+
+
+/* ==============================
+   PRODUCT IMAGE
+============================== */
+
+.manage-product-card img {
+    width: 90px;
+    height: 90px;
+
+    object-fit: contain;
+
+    border-radius: 8px;
+}
+
+
+/* ==============================
+   PRODUCT INFO
+============================== */
+
+.manage-product-info {
+    flex: 1;
+}
+
+.manage-product-info h3 {
+    margin: 0 0 7px;
+
+    color: #0f172a;
+}
+
+.manage-product-info p {
+    margin: 0 0 7px;
+
+    color: #64748b;
+}
+
+.manage-product-info strong {
+    color: #16a34a;
+
+    font-size: 18px;
+}
+
+
+/* ==============================
+   ACTION BUTTONS
+============================== */
+
+.product-actions {
+    display: flex;
+
+    gap: 10px;
+
+    align-items: center;
+}
+
+
+/* ==============================
+   EDIT BUTTON
+============================== */
+
+.edit-button {
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.edit-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* ==============================
+   DELETE BUTTON
+============================== */
+
+.delete-button {
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #dc2626;
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background: #b91c1c;
+}
+
+
+/* ==============================
+   EDIT SECTION
+============================== */
+
+.edit-section {
+    margin-top: 35px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 20px rgba(0, 0, 0, 0.08);
+}
+
+.edit-section h2 {
+    margin-bottom: 25px;
+
+    color: #0f172a;
+}
+
+
+/* ==============================
+   EDIT FORM
+============================== */
+
+.edit-section form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.edit-section label {
+    margin-bottom: 7px;
+
+    font-weight: 600;
+
+    color: #334155;
+}
+
+.edit-section input,
+.edit-section textarea {
+
+    padding: 12px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+.edit-section input:focus,
+.edit-section textarea:focus {
+
+    border-color: #2563eb;
+}
+
+.edit-section textarea {
+
+    min-height: 100px;
+
+    resize: vertical;
+}
+
+
+/* ==============================
+   FORM BUTTONS
+============================== */
+
+.edit-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 10px;
+}
+
+
+.update-button,
+.cancel-button {
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* UPDATE */
+
+.update-button {
+
+    background: #16a34a;
+
+    color: white;
+}
+
+.update-button:hover {
+
+    background: #15803d;
+}
+
+
+/* CANCEL */
+
+.cancel-button {
+
+    background: #e2e8f0;
+
+    color: #0f172a;
+}
+
+.cancel-button:hover {
+
+    background: #cbd5e1;
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 700px) {
+
+    .manage-product-card {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .product-actions {
+
+        width: 100%;
+    }
+
+    .edit-button,
+    .delete-button {
+
+        flex: 1;
+    }
+
+}

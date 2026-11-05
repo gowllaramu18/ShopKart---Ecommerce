@@ -1,0 +1,89 @@
+
+/* ShopKart navigation bar */
+
+.shopkart-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 17px 4%;
+    background: linear-gradient(110deg, #10264f, #1556c8);
+    box-shadow: 0 5px 22px rgba(16, 38, 79, 0.18);
+}
+
+.shopkart-logo {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.shopkart-nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 26px;
+}
+
+.shopkart-nav-link {
+    position: relative;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.shopkart-nav-link:hover {
+    color: #bfdbfe;
+}
+
+.shopkart-logout {
+    padding: 10px 19px;
+    border: none;
+    border-radius: 9px;
+    background: #ef4444;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.shopkart-logout:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+}
+
+.shopkart-logout:focus-visible,
+.shopkart-nav-link:focus-visible,
+.shopkart-logo:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 4px;
+}
+
+@media (max-width: 700px) {
+    .shopkart-navbar {
+        padding: 15px 18px;
+    }
+
+    .shopkart-logo {
+        font-size: 25px;
+    }
+
+    .shopkart-nav-links {
+        justify-content: flex-start;
+        gap: 16px;
+    }
+
+    .shopkart-nav-link {
+        font-size: 14px;
+    }
+}

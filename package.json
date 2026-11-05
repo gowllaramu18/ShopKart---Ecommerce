@@ -1,0 +1,17 @@
+{
+  "name": "shopkart-ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "frontend": "npm --prefix frontend run dev",
+    "backend": "cd backend && mvnw.cmd spring-boot:run",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
